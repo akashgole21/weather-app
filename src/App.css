@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+body {
+  background: #0d243aa8;
+  font-family: Helvetica, sans-serif;
+  color:#fff;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg-weather-image {
+  background: url('assets/images/blue-sky.jpeg') center center no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.row-height {
+  height: 100vh;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 58px;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 44px;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 38px;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+h6 {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+p {
+  font-size:16px;
+  line-height:24px;
+}
+
+.bg-box-style {
+  background-color: #0d243a82;
+  padding: 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+}
+
+@media (max-width: 768px) {
+ .bg-box-style {
+  background-color: #0d243a82;
+  padding: 20px;
+  border-radius: 20px;
+  backdrop-filter: none;
+ }
+}
+
+/* search bar style start here */
+
+.search-bar .search-text {
+  background: transparent;
+  color: #fff;
+  border-color: #9c9c9c;
+}
+
+.search-bar .search-btn {
+  background: transparent;
+  border: 1px solid #9c9c9c;
+}
+
+
+::placeholder {
+  color: #fff !important;
+  opacity: 0.6 !important;
+}
+
+/* weather details style start here */
+.box-heading .sub-heading{
+  font-size: 16px;
+  line-height: 22px;
+  border-bottom: 1px solid #9c9c9c;
+  padding-bottom: 10px;
+}
+
+.f-color-faint {
+  color: #ffffff82;
+}
+
+.dateTime-section {
+ padding-top:20px;
+}
+
+.detail-row {
+  border-bottom: 1px solid #9c9c9c;
+  padding:20px 0px 10px;
+}
+
+.detail-row p {
+  margin: 0px;
+}
+
+@media (max-width: 480px) {
+  .column-margin {
+    margin: 10px 0px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .row-height {
+    height: auto;
+    padding: 20px 10px;
   }
 }
